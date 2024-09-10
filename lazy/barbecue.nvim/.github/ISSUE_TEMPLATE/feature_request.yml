@@ -1,0 +1,35 @@
+name: Feature Request
+description: Request a feature.
+labels:
+  - enhancement
+
+title: "[FEAT]: "
+body:
+  - type: checkboxes
+    attributes:
+      label: Requirements
+      options:
+        - label: This feature isn't just a vague idea and can have a good practical solution.
+          required: true
+        - label: I'm completely sure that this feature fits into this plugin.
+          required: true
+        - label: I'm willing to implement this through a PR.
+
+  - type: textarea
+    attributes:
+      label: Problem
+      description: A comprehensive description of a problem you'd like to be solved.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Solution Suggestion
+      description: The way you'd like the problem to be solved.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Workaround
+      description: The solution you may be currently using to get around the problem.
